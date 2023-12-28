@@ -89,7 +89,7 @@
   }
    @media screen and (max-width: 450px) {
        .skyscrappers__list .skyscrapper-1 {
-           
+           display: none;
       }
   }
    .skyscrappers__list .skyscrapper-2 {
@@ -103,12 +103,12 @@
   }
    @media screen and (max-width: 900px) {
        .skyscrappers__list .skyscrapper-2 {
-           
+           display: none;
       }
   }
    @media screen and (max-width: 450px) {
        .skyscrappers__list .skyscrapper-1 {
-           
+           display: none;
       }
   }
    .skyscrappers__list .skyscrapper-3 {
@@ -122,12 +122,12 @@
   }
    @media screen and (max-width: 900px) {
        .skyscrappers__list .skyscrapper-3 {
-           
+           display: none;
       }
   }
    @media screen and (max-width: 450px) {
        .skyscrappers__list .skyscrapper-1 {
-           
+           display: none;
       }
   }
    .skyscrappers__list .skyscrapper-4 {
@@ -146,7 +146,7 @@
   }
    @media screen and (max-width: 450px) {
        .skyscrappers__list .skyscrapper-1 {
-           
+           display: none;
       }
   }
    .skyscrappers__list .skyscrapper-5 {
@@ -166,7 +166,7 @@
   }
    @media screen and (max-width: 450px) {
        .skyscrappers__list .skyscrapper-1 {
-           
+           display: none;
       }
   }
    .crane-cabin, .crane-arm, .crane-picker {
@@ -280,7 +280,7 @@
   }
    @media screen and (max-width: 900px) {
        .crane-2 {
-           
+           display: none;
       }
   }
    .crane-2 .crane-cable-3 {
@@ -300,7 +300,7 @@
   }
    @media screen and (max-width: 900px) {
        .crane-3 {
-           
+           display: none;
       }
   }
    .crane-3 .crane-cable-3 {
@@ -353,7 +353,7 @@
   }
    @media screen and (max-width: 768px) {
        .tree-1 {
-           
+           display: none;
       }
   }
    .tree-2 {
@@ -361,7 +361,7 @@
   }
    @media screen and (max-width: 768px) {
        .tree-2 {
-           
+           display: none;
       }
   }
    .tree-4 {
@@ -375,7 +375,7 @@
   }
    @media screen and (max-width: 450px) {
        .tree-7 {
-           
+           display: none;
       }
   }
    .tree-8 {
@@ -383,7 +383,7 @@
   }
    @media screen and (max-width: 450px) {
        .tree-8 {
-           
+           display: none;
       }
   }
    @keyframes cable-1__movement {
@@ -438,6 +438,19 @@
       }
   }
    
+  @media (max-width: 767px) {
+    .ocultar767paraabajo {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .ocultar768paraarriba {
+      display: none !important;
+    }
+  }
+
+
   </style>
   
   <main>
@@ -445,6 +458,9 @@
       <h1 class="advice__title">Sitio web en construcción o mantenimiento. </h1>
       <p class="advice__description"><span><</span> Continuamos <span>/></span> Aún no terminamos, Por favor visita esta pagina más tarde</p>
     </section>
+
+    <div class="ocultar767paraabajo">
+
     <section class="city-stuff">
       <ul class="skyscrappers__list">
         <li class="skyscrapper__item skyscrapper-1"></li>
@@ -489,7 +505,7 @@
           </ul>  
         </li>
       </ul>
-      <ul class="crane__list crane-1">
+      <ul class="crane__list crane-1"  style="height:32vh">
         <li class="crane__item crane-cable crane-cable-1"></li>
         <li class="crane__item crane-cable crane-cable-2"></li>
         <li class="crane__item crane-cable crane-cable-3"></li>
@@ -517,4 +533,88 @@
         <li class="crane__item crane-arm"></li>
       </ul>
     </section>
+
+
+    </div>
+
+
+    <div class="ocultar768paraarriba">
+
+        <section class="city-stuff">
+          <ul class="skyscrappers__list">
+            <li class="skyscrapper__item skyscrapper-1" ></li>
+            <li class="skyscrapper__item skyscrapper-2"></li>
+            <li class="skyscrapper__item skyscrapper-3" ></li>
+            <li class="skyscrapper__item skyscrapper-4" ></li>
+            <li class="skyscrapper__item skyscrapper-5" ></li>
+          </ul>
+          <ul class="tree__container">
+            <li class="tree__list">
+              <ul class="tree__item tree-1">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>
+              <ul class="tree__item tree-2">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>
+              <ul class="tree__item tree-3">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>  
+              <ul class="tree__item tree-4">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>  
+              <ul class="tree__item tree-5">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>  
+              <ul class="tree__item tree-6">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>  
+              <ul class="tree__item tree-7">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>  
+              <ul class="tree__item tree-8">
+                <li class="tree__trunk"></li>
+                <li class="tree__leaves"></li>
+              </ul>  
+            </li>
+          </ul>
+          <ul class="crane__list crane-1" style="height:42vh">
+            <li class="crane__item crane-cable crane-cable-1" ></li>
+            <li class="crane__item crane-cable crane-cable-2" ></li>
+            <li class="crane__item crane-cable crane-cable-3"></li>
+            <li class="crane__item crane-stand"></li>
+            <li class="crane__item crane-weight" ></li>
+            <li class="crane__item crane-cabin"></li>
+            <li class="crane__item crane-arm" ></li>
+          </ul>
+          <ul class="crane__list crane-2">
+            <li class="crane__item crane-cable crane-cable-1"></li>
+            <li class="crane__item crane-cable crane-cable-2"></li>
+            <li class="crane__item crane-cable crane-cable-3"></li>
+            <li class="crane__item crane-stand"></li>
+            <li class="crane__item crane-weight"></li>
+            <li class="crane__item crane-cabin"></li>
+            <li class="crane__item crane-arm"></li>
+          </ul>
+          <ul class="crane__list crane-3">
+            <li class="crane__item crane-cable crane-cable-1"></li>
+            <li class="crane__item crane-cable crane-cable-2"></li>
+            <li class="crane__item crane-cable crane-cable-3"></li>
+            <li class="crane__item crane-stand"></li>
+            <li class="crane__item crane-weight"></li>
+            <li class="crane__item crane-cabin"></li>
+            <li class="crane__item crane-arm"></li>
+          </ul>
+        </section>
+    
+    
+        </div>
+
+
   </main>
